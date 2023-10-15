@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import logo from '../../../public/imagens/logo.png'
+import CampoTexto from '../CampoTexto/index'
+
 const HeaderEstilizado = styled.header`
     padding: 60px 0;
     display: flex;
@@ -10,8 +12,10 @@ const HeaderEstilizado = styled.header`
 `
 
 function Cabecalho () {
-    return (<HeaderEstilizado>
+    return (
+    <HeaderEstilizado>
         <img src={logo} alt="Logo do Space app" />
+        <CampoTexto/>
     </HeaderEstilizado>
     )
 }
