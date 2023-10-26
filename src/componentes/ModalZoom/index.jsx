@@ -1,8 +1,10 @@
+import Imagem from "../Galeria/Imagem"
+
 const ModalZoom = ({ foto }) => {
     return (
         <>
             <dialog open={!!foto}>
-                <p>Exemplo do Mozilla</p>
+                <Imagem foto={foto} expandida={true} />
                 <form method="dialog">
                     <button type="submit">ok</button>
                 </form>
